@@ -10,5 +10,8 @@
       "source": "./",
       "description": "Governed multi-agent engineering console rail: one board, one hash-chained record, every agent."
     }
-  ]
+  ],
+  "metadata": {
+    "description": "The FlightDeck marketplace: governed multi-agent engineering for Claude Code \u2014 one board, one hash-chained record, every agent."
+  }
 }
