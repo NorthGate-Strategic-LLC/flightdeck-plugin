@@ -52,5 +52,5 @@ enrollment token. Full policy: <https://ai-flightdeck.com/privacy>
 ## License
 
 The plugin wrapper (this repo) and the `flightdeck-connect` package are
-proprietary — free to install and use; see the package license. © Northgate
-Strategic LLC.
+proprietary — free to install and use; see the package license. U.S. patent
+pending (incl. App. No. 19/765,031). © Northgate Strategic LLC.
