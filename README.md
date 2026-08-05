@@ -6,6 +6,28 @@ claim adjudication, scope observation (git-observed, never self-reported),
 liveness ("is anything actually running, and for how long"), and cost
 instruments that treat unknown as unknown — never as zero.
 
+## Requirements
+
+- **[uv](https://docs.astral.sh/uv/)** on PATH (`uvx` launches the server;
+  `pip install uv` or the one-line installer). Verified: `uvx --from
+  flightdeck-connect conductor-mcp` cold-boots from PyPI and serves all 25
+  tools.
+- Python 3.9+.
+
+No uv? Install the package once (`pip install flightdeck-connect`) and use
+this MCP config instead — same server, same tools:
+
+```json
+{
+  "mcpServers": {
+    "flightdeck": {
+      "command": "conductor-mcp",
+      "env": { "MCP_TOOL_SET": "flightdeck" }
+    }
+  }
+}
+```
+
 ## Install
 
 ```
