@@ -1,0 +1,14 @@
+{
+  "name": "flightdeck",
+  "owner": {
+    "name": "Northgate Strategic LLC",
+    "url": "https://ai-flightdeck.com"
+  },
+  "plugins": [
+    {
+      "name": "flightdeck",
+      "source": "./",
+      "description": "Governed multi-agent engineering console rail: one board, one hash-chained record, every agent."
+    }
+  ]
+}
