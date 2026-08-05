@@ -1,0 +1,74 @@
+{
+  "manifest_version": "0.3",
+  "name": "flightdeck-conductor",
+  "display_name": "NorthGate FlightDeck",
+  "version": "0.3.1",
+  "description": "Govern AI agent work from Claude: read and create task packets on a local FlightDeck board, dispatch and receive handoffs, run operator-defined verification, and STOP a lane with a chained, tamper-evident HOLD record.",
+  "long_description": "FlightDeck turns your AI coding agents into governed work. Dispatch, HOLD, reassignment and provisioning land on a hash-chained, tamper-evident event ledger; signals and verification results are recorded on the packet beside it. Claims an agent asserts are gated through adjudication before they can become work; scope is observed from git rather than trusted from the agent's self-report; liveness says whether anything is actually running and for how long; burn and budget read what the board actually cost. Local-first: board tools send nothing anywhere, and the cloud tool family is inert until you supply an operator-issued enrollment token.",
+  "author": {
+    "name": "Northgate Strategic LLC",
+    "url": "https://ai-flightdeck.com"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "python",
+    "entry_point": "server/main.py",
+    "mcp_config": {
+      "command": "python",
+      "args": [
+        "${__dirname}/server/main.py"
+      ],
+      "env": {
+        "FLIGHTDECK_BOARD": "${user_config.board}",
+        "MCP_TOOL_SET": "${user_config.tool_set}"
+      },
+      "platform_overrides": {
+        "darwin": {
+          "command": "python3"
+        },
+        "linux": {
+          "command": "python3"
+        }
+      }
+    }
+  },
+  "user_config": {
+    "board": {
+      "type": "directory",
+      "title": "FlightDeck board folder",
+      "description": "The local board folder FlightDeck governs (contains queue/ and the event ledger). Board-scoped tools read and append here; nothing leaves this machine.",
+      "required": true
+    },
+    "tool_set": {
+      "type": "string",
+      "title": "Tool set",
+      "description": "Which tool family Claude sees. Valid values: 'flightdeck' (recommended - board governance only), 'conductor' (the cloud client family), 'all'. Any other value is refused at startup rather than silently expanding the surface.",
+      "default": "flightdeck",
+      "required": false
+    }
+  },
+  "tools_generated": false,
+  "keywords": [
+    "ai-governance",
+    "agents",
+    "flightdeck",
+    "conductor",
+    "audit-trail",
+    "hash-chain"
+  ],
+  "license": "LicenseRef-Proprietary",
+  "privacy_policies": [
+    "https://ai-flightdeck.com/privacy"
+  ],
+  "compatibility": {
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ],
+    "runtimes": {
+      "python": ">=3.9"
+    }
+  },
+  "homepage": "https://ai-flightdeck.com/mcp"
+}
