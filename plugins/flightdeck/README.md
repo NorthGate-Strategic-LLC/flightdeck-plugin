@@ -2,7 +2,7 @@
 
 FlightDeck adds a local governance rail to Codex coding work: scoped task packets, governed lanes, policy and prior-art checks, verified progress signals, workspace verification, and an evidence-bounded return.
 
-The plugin launches the published `flightdeck-connect` 0.5.1 MCP package through `uvx`. With the local FlightDeck tool set configured here, its board and event chain are handled on the machine running the server.
+The plugin launches the published `flightdeck-connect` 0.5.2 MCP package through `uvx`. With the local FlightDeck tool set configured here, its board and event chain are handled on the machine running the server.
 
 ## Requirements
 
@@ -40,7 +40,7 @@ Start a new Codex task after installation so the MCP server and skill are loaded
 Install the same pinned package into Python and register its executable directly:
 
 ```powershell
-python -m pip install flightdeck-connect==0.5.1
+python -m pip install flightdeck-connect==0.5.2
 codex mcp add flightdeck --env MCP_TOOL_SET=flightdeck -- conductor-mcp
 ```
 
@@ -48,4 +48,4 @@ This manual MCP registration is an alternative to the plugin-managed server, not
 
 Privacy policy: <https://ai-flightdeck.com/privacy>
 
-Support: <support@northgatestrategic.com>
+Support: <https://ai-flightdeck.com/support>

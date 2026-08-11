@@ -4,7 +4,7 @@
       "command": "uvx",
       "args": [
         "--from",
-        "flightdeck-connect==0.5.1",
+        "flightdeck-connect==0.5.2",
         "conductor-mcp"
       ],
       "env": {

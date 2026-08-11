@@ -1,19 +1,19 @@
-# FlightDeck — Claude Code plugin
+# FlightDeck — Codex and Claude Code plugin
 
-The governed-engineering rail for Claude Code: every AI coding agent on your
+The governed-engineering rail for Codex and Claude Code: every AI coding agent on your
 machine dispatched onto **one board**, with a hash-chained event ledger, HOLD,
 claim adjudication, scope observation (git-observed, never self-reported),
 liveness ("is anything actually running, and for how long"), and cost
 instruments that treat unknown as unknown — never as zero. And **the Cue**
 (`flightdeck_cue`) — your lane's next valid governed move, surfaced right inside
-the coding agent (ships in `flightdeck-connect` 0.5.0).
+the coding agent (ships in `flightdeck-connect` 0.5.2).
 
 ## Requirements
 
 - **[uv](https://docs.astral.sh/uv/)** on PATH (`uvx` launches the server;
   `pip install uv` or the one-line installer). Verified: `uvx --from
   flightdeck-connect conductor-mcp` cold-boots from PyPI and serves the full
-  flightdeck tool set — 26 tools as of `flightdeck-connect` 0.5.0, including
+  flightdeck tool set — 26 tools as of `flightdeck-connect` 0.5.2, including
   the Cue (`flightdeck_cue`).
 - Python 3.9+.
 
@@ -31,7 +31,18 @@ this MCP config instead — same server, same tools:
 }
 ```
 
-## Install
+## Install in Codex
+
+```powershell
+codex plugin marketplace add NorthGate-Strategic-LLC/flightdeck-plugin
+codex plugin add flightdeck@flightdeck
+```
+
+Start a new Codex task after installation, then ask:
+
+> Put this task under FlightDeck governance.
+
+## Install in Claude Code
 
 ```
 /plugin marketplace add NorthGate-Strategic-LLC/flightdeck-plugin
@@ -42,7 +53,7 @@ The MCP server is pulled from PyPI
 ([`flightdeck-connect`](https://pypi.org/project/flightdeck-connect/)) via
 `uvx` — pure stdlib, zero runtime dependencies, Python 3.9+.
 
-Then in any session: `/flightdeck` turns governance on. Set `FLIGHTDECK_BOARD`
+Then in any Claude Code session: `/flightdeck` turns governance on. Set `FLIGHTDECK_BOARD`
 to your board folder (a board is just a local folder — your first
 `flightdeck_create_packet` creates it).
 
@@ -51,6 +62,8 @@ to your board folder (a board is just a local folder — your first
 Local-first: board tools send nothing anywhere — no telemetry, no analytics,
 no phone-home. The cloud tool family is inert without an operator-issued
 enrollment token. Full policy: <https://ai-flightdeck.com/privacy>
+
+Support: <https://ai-flightdeck.com/support>
 
 ## License
 

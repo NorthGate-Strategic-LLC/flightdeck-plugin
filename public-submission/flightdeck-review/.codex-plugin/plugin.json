@@ -1,0 +1,44 @@
+{
+  "name": "flightdeck-review",
+  "version": "1.0.0",
+  "description": "Evidence-bounded code and release readiness review.",
+  "author": {
+    "name": "NorthGate Strategic LLC",
+    "email": "support@northgatestrategic.com",
+    "url": "https://ai-flightdeck.com"
+  },
+  "homepage": "https://ai-flightdeck.com/review",
+  "repository": "https://github.com/NorthGate-Strategic-LLC/flightdeck-plugin",
+  "license": "LicenseRef-Proprietary",
+  "keywords": [
+    "code-review",
+    "release-readiness",
+    "evidence",
+    "security",
+    "ai-governance"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "FlightDeck Review",
+    "shortDescription": "Evidence-bounded release readiness reviews.",
+    "longDescription": "Audit code, packaging, security, privacy, public claims, reviewer cases, and submission gates without turning missing evidence into a pass. FlightDeck Review returns a clear ship decision, reproducible findings, executed checks, bounded fixes when requested, and every remaining gap.",
+    "developerName": "NorthGate Strategic LLC",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://ai-flightdeck.com/review",
+    "privacyPolicyURL": "https://ai-flightdeck.com/privacy",
+    "termsOfServiceURL": "https://ai-flightdeck.com/terms",
+    "defaultPrompt": [
+      "Audit this project for release readiness and report only verified findings.",
+      "Review this plugin for marketplace submission, including five positive and three negative reviewer tests.",
+      "Make this release candidate ready to ship, then rerun every relevant check."
+    ],
+    "brandColor": "#2F6BFF",
+    "composerIcon": "./assets/flightdeck.png",
+    "logo": "./assets/flightdeck.png",
+    "logoDark": "./assets/flightdeck-deck.png"
+  }
+}
