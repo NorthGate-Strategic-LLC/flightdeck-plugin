@@ -1,6 +1,6 @@
 {
   "name": "flightdeck",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Local governance rails for AI coding work: packets, lanes, policy checks, evidence, and a hash-chained record.",
   "author": {
     "name": "NorthGate Strategic LLC",
@@ -36,7 +36,10 @@
       "Show me the current FlightDeck board and active lanes.",
       "Create and dispatch a governed packet for this work."
     ],
-    "brandColor": "#2F6BFF"
+    "brandColor": "#2F6BFF",
+    "composerIcon": "./assets/flightdeck.png",
+    "logo": "./assets/flightdeck.png",
+    "logoDark": "./assets/flightdeck-deck.png"
   },
   "mcpServers": "./.mcp.json"
 }
