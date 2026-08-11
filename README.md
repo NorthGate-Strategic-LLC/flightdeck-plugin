@@ -4,14 +4,17 @@ The governed-engineering rail for Claude Code: every AI coding agent on your
 machine dispatched onto **one board**, with a hash-chained event ledger, HOLD,
 claim adjudication, scope observation (git-observed, never self-reported),
 liveness ("is anything actually running, and for how long"), and cost
-instruments that treat unknown as unknown — never as zero.
+instruments that treat unknown as unknown — never as zero. And **the Cue**
+(`flightdeck_cue`) — your lane's next valid governed move, surfaced right inside
+the coding agent (ships in `flightdeck-connect` 0.5.0).
 
 ## Requirements
 
 - **[uv](https://docs.astral.sh/uv/)** on PATH (`uvx` launches the server;
   `pip install uv` or the one-line installer). Verified: `uvx --from
-  flightdeck-connect conductor-mcp` cold-boots from PyPI and serves all 25
-  tools.
+  flightdeck-connect conductor-mcp` cold-boots from PyPI and serves the full
+  flightdeck tool set — 26 tools as of `flightdeck-connect` 0.5.0, including
+  the Cue (`flightdeck_cue`).
 - Python 3.9+.
 
 No uv? Install the package once (`pip install flightdeck-connect`) and use

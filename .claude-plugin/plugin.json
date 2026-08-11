@@ -1,7 +1,7 @@
 {
   "name": "flightdeck",
   "description": "Governed multi-agent engineering: packets, dispatch, HOLD, a hash-chained event ledger, claim adjudication, scope observation, liveness, and cost instruments — for every AI coding agent on your machine, on one board.",
-  "version": "0.3.1",
+  "version": "0.5.0",
   "author": {
     "name": "Northgate Strategic LLC",
     "url": "https://ai-flightdeck.com"
