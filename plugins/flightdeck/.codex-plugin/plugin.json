@@ -1,0 +1,42 @@
+{
+  "name": "flightdeck",
+  "version": "0.5.1",
+  "description": "Local governance rails for AI coding work: packets, lanes, policy checks, evidence, and a hash-chained record.",
+  "author": {
+    "name": "NorthGate Strategic LLC",
+    "email": "support@northgatestrategic.com",
+    "url": "https://ai-flightdeck.com"
+  },
+  "homepage": "https://ai-flightdeck.com/mcp",
+  "repository": "https://github.com/NorthGate-Strategic-LLC/flightdeck-plugin",
+  "license": "LicenseRef-Proprietary",
+  "keywords": [
+    "ai-governance",
+    "coding-agents",
+    "evidence",
+    "mcp",
+    "local-first"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "FlightDeck",
+    "shortDescription": "Govern Codex work on a local, evidence-backed board.",
+    "longDescription": "FlightDeck gives Codex a local governance rail for creating work packets, opening governed lanes, checking policy and prior art, recording verified signals, and returning evidence-bounded results.",
+    "developerName": "NorthGate Strategic LLC",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://ai-flightdeck.com/mcp",
+    "privacyPolicyURL": "https://ai-flightdeck.com/privacy",
+    "termsOfServiceURL": "https://ai-flightdeck.com/terms",
+    "defaultPrompt": [
+      "Put this task under FlightDeck governance.",
+      "Show me the current FlightDeck board and active lanes.",
+      "Create and dispatch a governed packet for this work."
+    ],
+    "brandColor": "#2F6BFF"
+  },
+  "mcpServers": "./.mcp.json"
+}

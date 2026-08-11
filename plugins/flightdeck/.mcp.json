@@ -1,0 +1,15 @@
+{
+  "mcp_servers": {
+    "flightdeck": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "flightdeck-connect==0.5.1",
+        "conductor-mcp"
+      ],
+      "env": {
+        "MCP_TOOL_SET": "flightdeck"
+      }
+    }
+  }
+}

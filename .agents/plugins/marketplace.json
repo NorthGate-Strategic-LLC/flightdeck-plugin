@@ -1,0 +1,22 @@
+{
+  "name": "flightdeck",
+  "interface": {
+    "displayName": "FlightDeck"
+  },
+  "plugins": [
+    {
+      "name": "flightdeck",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/NorthGate-Strategic-LLC/flightdeck-plugin.git",
+        "path": "./plugins/flightdeck",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
